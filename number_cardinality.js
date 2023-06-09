@@ -34,16 +34,16 @@ const number_cardinality = (inputValue) => {
     let response;
     switch (true) {
       case newValue.endsWith("0"):
-        response = console.log("zero");
+        response = "zero";
         break;
       case newValue.endsWith("5"):
-        response = console.log("five");
+        response = "five";
         break;
       case newValue % 2 === 0 && !newValue.endsWith("0"):
-        response = console.log("even");
+        response = "even";
         break;
       case newValue.endsWith("0"):
-        response = console.log("odd");
+        response = "odd";
         break;
       default:
         break;
@@ -52,4 +52,5 @@ const number_cardinality = (inputValue) => {
   }
 };
 
-module.exports = number_cardinality;
+
+module.exports = number_cardinality; 
